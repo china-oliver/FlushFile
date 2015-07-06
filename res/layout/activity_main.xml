@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- 显示内容 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guid_viewpager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/image_frame"
+        android:text="跳过"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        />
+    
+    <!-- 显示选中的下标  -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/guid_index_line"
+	    android:gravity="center"
+        >
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_height="@dimen/guide_index_img_size"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/guide_index_img_size"
+            android:src="@drawable/pagers_index_selected"
+            />
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_height="@dimen/guide_index_img_size"
+            android:layout_width="@dimen/guide_index_img_size"
+            android:layout_margin="10dp"
+            android:src="@drawable/pagers_index_bg"
+            />
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_height="@dimen/guide_index_img_size"
+            android:layout_width="@dimen/guide_index_img_size"
+            android:layout_margin="10dp"
+            android:src="@drawable/pagers_index_bg"
+            /> 
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_height="@dimen/guide_index_img_size"
+            android:layout_width="@dimen/guide_index_img_size"
+            android:layout_margin="10dp"
+            android:src="@drawable/pagers_index_bg"
+            /> 
+    </LinearLayout>
+</RelativeLayout>
